@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css" />
+    <script async src="/index.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="searchBox">
+        <input id="searchbox" placeholder="Search Artis..." type="text" />
+        <button id="seachbutton">🔎</button>
+      </div>
+      <template data-user-template>
+        <div class="displayBox">
+          <div class="displayInfo">
+            <h1>${data.results["0"].artistName}</h1>
+            <br />
+            <p>${data.results["0"].copyright}</p>
+          </div>
+        </div>
+      </template>
+    </main>
+  </body>
+</html>
